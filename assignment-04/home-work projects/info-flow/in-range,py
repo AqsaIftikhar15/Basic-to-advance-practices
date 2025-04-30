@@ -1,0 +1,15 @@
+def in_range(n, low, high):
+    return low <= n <= high
+
+def main():
+    number = int(input("Enter a number: "))
+    lower = int(input("Enter the lower bound: "))
+    upper = int(input("Enter the upper bound: "))
+
+    if in_range(number, lower, upper):
+        print("Yes, it's in range!")
+    else:
+        print("No, it's out of range.")
+
+if __name__ == '__main__':
+    main()
